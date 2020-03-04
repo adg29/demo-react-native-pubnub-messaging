@@ -11,7 +11,7 @@ export const EmojiPickerView = ({navigation }) => {
     }
 
     const handleContinueButton = () => {
-        if (choseEmoji !== null) {
+        if (chosenEmoji !== null) {
             navigation.replace("Chat", { emoji: chosenEmoji})
         }
     }
