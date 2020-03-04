@@ -1,5 +1,8 @@
 import "react-native-getsture-handler"
 import React from "react"
+
+import { PUBNUB_SUBSCRIBE_KEY, PUBNUB_PUBLISH_KEY } from "react-native-dotenv"
+
 import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 
@@ -11,8 +14,8 @@ import { ChatView } from "./views/Chat";
 
 
 const pubnub = new PubNub({
-    subscribeKey: "",
-    publiskKey: ""
+    subscribeKey: PUBNUB_SUBSCRIBE_KEY,
+    publiskKey: PUBNUB_PUBLISH_KEY
 })
 
 console.disableYellowBox = true
