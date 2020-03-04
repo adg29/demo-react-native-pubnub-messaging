@@ -1,4 +1,4 @@
-import "react-native-getsture-handler"
+import "react-native-gesture-handler"
 import React from "react"
 
 import { PUBNUB_SUBSCRIBE_KEY, PUBNUB_PUBLISH_KEY } from "react-native-dotenv"

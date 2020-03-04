@@ -18,17 +18,17 @@ export const EmojiPickerView = ({navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View styles={styles.topContainer}>
+            <View style={styles.topContainer}>
                 <Text style={styles.hint}>
                     Pick an emoji that will represent you in the chat!
                 </Text>
                 <View
                     style={{
-                        ...style.emojiContainer,
+                        ...styles.emojiContainer,
                         ...(chosenEmoji === null ? styles.empty : {})
                     }}
                 >
-                    <Text styles={styles.emoji}>
+                    <Text style={styles.emoji}>
                         {chosenEmoji || ""}
                     </Text>
                 </View>
