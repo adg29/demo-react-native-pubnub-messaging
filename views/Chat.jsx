@@ -48,4 +48,15 @@ export const ChatView = ({ route }) => {
             }
         }
     }, [pubnub])
+
+    const handleSubmit = () => {
+        setInput("")
+
+        const message = {
+            content: input,
+            id: Math.random().toString(16).substr(2)
+        }
+
+        pubnub.publish({ channel: "chat", message })
+    }
 }
