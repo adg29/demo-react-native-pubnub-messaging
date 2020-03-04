@@ -49,7 +49,7 @@ export const EmojiPickerView = ({navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
         width: "100%",
         height: "100%"
     },

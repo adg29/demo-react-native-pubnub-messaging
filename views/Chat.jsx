@@ -74,7 +74,7 @@ export const ChatView = ({ route }) => {
                     {messages.map(message => (
                         <View key={message.timetoken}
                             style={styles.messageContainer}>
-                            <View styles={styles.avatar}
+                            <View styles={styles.avatar}>
                                 <Text style={styles.avatarContent}>
                                 {message.author}
                                 </Text>
